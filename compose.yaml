@@ -1,0 +1,9 @@
+services:
+  postgres:
+    image: 'postgres:latest'
+    environment:
+      - 'POSTGRES_DB=newbee-db'
+      - 'POSTGRES_PASSWORD=newbee-password'
+      - 'POSTGRES_USER=newbeeman'
+    ports:
+      - '5433:5432'
